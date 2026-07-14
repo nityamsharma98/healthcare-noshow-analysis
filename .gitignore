@@ -1,0 +1,17 @@
+# Heavy regenerable artifact — rebuilt from data/raw via scripts/01_clean_profile.py
+data/processed/appointments_clean.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs / temp
+*.log

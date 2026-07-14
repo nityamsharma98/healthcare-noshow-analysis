@@ -1,0 +1,18 @@
+=== Data Quality & Cleaning Log — Patient No-Show ===
+
+Loaded raw dataset: 110,527 rows, 14 columns
+DQ-3: renamed misspelled columns (Hipertension->hypertension, Handcap->handicap)
+DQ-7: parsed dates; derived lead_days and appt_weekday
+DQ-5: created no_show (1 = missed, 0 = attended) from inverted source label
+DQ-1: removed 1 record(s) with negative age
+DQ-2: removed 5 record(s) with appointment dated before booking
+DQ-6: engineered prior_appts, prior_no_shows, prior_no_show_rate per patient
+Applied transparent rule-based risk score -> risk_tier (Low/Medium/High)
+
+Saved cleaned dataset: appointments_clean.csv (110,521 rows, 24 cols)
+Rows removed in cleaning: 6
+
+=== Validation: no-show rate by risk tier ===
+  Low     n=27,304  no-show rate=5.6%
+  Medium  n=61,230  no-show rate=20.4%
+  High    n=21,987  no-show rate=37.7%
