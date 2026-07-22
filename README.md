@@ -64,11 +64,15 @@ healthcare-noshow-analysis/
 │   ├── 01_clean_profile.py        ✅ data cleaning + quality log
 │   └── 02_build_dashboard_data.py ✅ builds the data the dashboard reads
 └── dashboard/
-    ├── noshow_dashboard.html      ✅ interactive dashboard (data-driven)
-    ├── dashboard_data.js          ✅ generated data the dashboard loads
+    ├── noshow_dashboard.html      ✅ interactive dashboard (filter by tier/age/clinic/SMS)
+    ├── dashboard_rows.js          ✅ compact row-level data powering the live filters
+    ├── dashboard_data.js          ✅ pre-computed aggregates (portable)
     ├── dashboard_data.json        ✅ portable copy of the aggregates
     └── dashboard_spec.md          ✅ Tableau/Power BI build spec
 ```
+
+**Interactive:** the dashboard lets a viewer filter by risk tier, age band, clinic, and SMS reminder —
+every KPI and chart recomputes in the browser instantly, so the graphs change as you explore.
 
 ## 5. Data Source & Dictionary
 
