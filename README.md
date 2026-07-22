@@ -6,6 +6,14 @@
 
 ---
 
+> ## 🔴 [**▶ View the Live Interactive Dashboard**](https://nityamsharma98.github.io/healthcare-noshow-analysis/)
+>
+> **https://nityamsharma98.github.io/healthcare-noshow-analysis/**
+>
+> ℹ️ The charts render on the **live site** linked above. Opening the `.html` file here inside GitHub only shows its source code — GitHub doesn't run web pages in the file view.
+
+---
+
 ## 1. Business Context
 
 A regional healthcare provider loses significant revenue and clinical capacity to **missed appointments (no-shows)**. Each no-show is an unused clinical slot, delayed care for the patient, and lost throughput for the system. Leadership wants a data-driven way to **predict which appointments are at risk of a no-show at the time of booking** and trigger a proportionate intervention (reminder cadence, confirmation call, or controlled overbooking).
